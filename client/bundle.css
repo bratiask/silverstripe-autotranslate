@@ -1,0 +1,54 @@
+.autotranslate {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #43536d;
+    outline: none;
+    cursor: pointer;
+}
+
+.autotranslate .font-icon-translatable {
+    pointer-events: none;
+}
+
+.autotranslate .caret {
+    margin-left: 5px;
+    pointer-events: none;
+}
+
+.autotranslate ul {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #e9f0f4;
+    border: 1px solid #e7ebf0;
+    border-radius: 2px;
+    list-style: none;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.autotranslate ul li {
+    padding: 5px 10px;
+}
+
+.autotranslate ul li:hover {
+    background-color: #d8e4eb;
+}
+
+.form__field-holder .translate-in-progress {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    background-color: #ffffffaa;
+}
+
+.form__field-holder .translate-in-progress span {
+    display: inline-block;
+    background-color: #ffffff99;
+    margin: 1px;
+    padding: 7px 0 7px 10px;
+}

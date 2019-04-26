@@ -1,0 +1,23 @@
+{
+    "name": "bratiask/silverstripe-autotranslate",
+    "type": "silverstripe-vendormodule",
+    "authors": [
+        {
+            "name": "Pavol Tuka",
+            "email": "pavol@bratia.sk"
+        }
+    ],
+    "require": {
+        "tractorcow/silverstripe-fluent": "^4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bratiask\\Autotranslate\\": "src/"
+        }
+    },
+    "extra": {
+        "expose": [
+            "client"
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+---
+Name: autotranslate
+After: versionedfiles
+---
+
+Silverstripe\SiteConfig\SiteConfig:
+    extensions:
+        - Bratiask\Autotranslate\SiteConfig\AutotranslateSiteConfig
+
+SilverStripe\Admin\LeftAndMain:
+    extra_requirements_css:
+        - bratiask/silverstripe-autotranslate:client/bundle.css
+    extra_requirements_javascript:
+        - bratiask/silverstripe-autotranslate:client/bundle.js
+
+---
+Name: autotranslate-routes
+After:
+    - rootroutes
+    - coreroutes
+---
+SilverStripe\Control\Director:
+    rules:
+        autotranslate//translate: Bratiask\Autotranslate\Controller\GoogleTranslateController
