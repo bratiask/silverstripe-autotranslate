@@ -10,11 +10,16 @@ WYSIWYG field:
 
 ![HTML translation](docs/silverstripe-autotranslate-html.gif "HTML translation")
 
-
-## Instalation
-
-`composer require bratiask/silverstripe-autotranslate`
-
 ## Dependency
 
 https://github.com/tractorcow-farm/silverstripe-fluent
+
+## Instalation
+* Add composer package
+
+`composer require bratiask/silverstripe-autotranslate`
+* Run dev/build?flush=all
+
+`vendor/bin/sake dev/build?flush=all`
+
+* Set Google Translate API key (CMS → Settings → Autotranslate)
